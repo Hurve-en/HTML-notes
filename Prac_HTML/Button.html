@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" href="images/picture_1.jpg" type="image/jpg"></link>  
+        <title>Button</title>
+    </head>
+
+    <body>
+        <h1>Button Using HTML</h1>
+
+        <!-- This is a button inside a link -->
+        <!-- When clicked, it opens 'audios.html' in a new tab -->
+        <a href="audios.html"
+           target="_blank"
+           title="Go to About Me page">
+           
+            <!-- This creates a simple HTML button -->
+            <!-- 'style' changes the look: font size, color, background, and rounded corners -->
+            <button style="font-size:25px; background-color: grey; color: white; border-radius:25px;">
+                <i>Click me</i> <!-- <i> makes the text italic -->
+            </button>
+        </a>
+
+        <br>
+        <hr>
+
+        <h1>Button Using Java Script</h1>
+        <br>
+
+        <!-- This button uses JavaScript to do something when clicked -->
+        <!-- 'onClick' tells the button to run the function named doSomething() -->
+        <!-- The style makes it look similar to the first button -->
+        <button onClick="doSomething()" style="font-size:25px; background-color: grey; color: white; border-radius:25px;">
+            <i>Click me</i>
+        </button>
+
+        <!-- This text will change when the JavaScript button is clicked -->
+        <p id="Greeting">Hello</p>
+        
+        <script> 
+            function doSomething() {
+                // Changes the text inside the paragraph with id="Greeting"
+                document.getElementById("Greeting").innerHTML = "Have a nice day!";
+            }
+        </script>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" href="images/picture_1.jpg.jpg" type="image/jpg"></link>
+        <title>Form</title>
+    </head>
+
+    <body>
+        <!--Form using HTML-->
+        <!--action is submitting the data to the backend -->
+        <!--method is how the data is sent to the backend-->
+        <!--Post method is for confidential information-->
+        <!--Get is for insensitive data-->
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" placeholder = "name" minlength="8" maxlength="15" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder = "password" minlength="8" maxlength="15" required>
+            <br>
+
+
+            <label for="email">Email:</label>
+            <input type ="email" id="email" placeholder="name@gmail.com" minlength="8" maxlength="15" required >
+            <br>
+            
+           
+            <label for="phone">Phone no:</label>
+            <input type="phone" id="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br>
+            
+
+            <label for="Bday">Birthdate:</label>
+            <input type="date" id="Bday" placeholder="Bday">
+            <br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="1">
+            <br>
+
+            <label for="title">Title:</label>
+
+            <label for="Mr.">Mr.:</label>
+            <input type= "radio" id="Mr." value = "Mr." name = "title">
+
+            <label for="Ms.">Ms.:</label>
+            <input type= "radio" id="Ms." value = "Ms." name = "title">
+
+            <label for="Phd">PhD:</label>
+            <input type="radio" id="PhD." value = "PhD". name = "title">
+            <br>
+
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+            <br>
+
+            <label for="subscribe">Subscribe:</label>
+            <input type ="checkbox" id="subscribe">
+            <br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="3" cols="25"></textarea>
+            <br>
+            
+            <label for="file">File:</label>
+            <input type= "file" id="file" accept ="image/png, image/jpeg">
+            <br>
+
+            <input type = "submit">
+            <input type = "reset"> 
+
+            <!--Form attributes
+                1. action
+                2. method
+                3. for
+                4. type
+                5. id
+                6. placeholder
+                7. minlength
+                8. maxlength
+                9. required
+                10. pattern
+                11. min
+                12. max
+                13. value
+                14. name
+            -->
+
+        </form>
+    </body>
+</html>
+
